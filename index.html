@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Password Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="referrer" content="no-referrer" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png"> -->
+    <!-- <link rel="manifest" href="manifest.json" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script type='text/javascript' src='words.js'></script>
+</head>
+
+<body>
+    <div class="swiper mySwiper">
+        <div id="swWrapper" class="swiper-wrapper">
+            <div class="swiper-slide intro">
+                Welcome to</br>
+                Password Game</br></br>
+                Swipe left to begin.
+            </div>
+            <div class="swiper-slide intro">
+                Once selected a level, you'll get a stack of cards with a Password on it to play. Continue to swipe
+                left.
+            </div>
+            <div class="swiper-slide intro">
+                <button onclick="setCards('e')">Easy</button>
+                <button onclick="setCards('m')">Medium</button>
+                <button onclick="setCards('h')">Hard</button>
+            </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type='text/javascript' src='main.js'></script>
+
+    <!-- <script alt="serviceWorker">
+        if ('serviceWorker' in navigator && location.host.length) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('serviceworker.js').then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script> -->
+</body>
+
+</html>

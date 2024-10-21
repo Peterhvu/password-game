@@ -1,0 +1,81 @@
+html,
+body {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(80deg, #164251, #050c32);
+    color: #fff;
+}
+
+body {
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    margin: 15px;
+    padding: 0;
+}
+
+.swiper {
+    width: 70%;
+    height: 96%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(177, 92%, 23%);
+    overflow-y: scroll;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide.intro {
+    font-size: 4em;
+}
+
+/* overriding swipper's bundle style  */
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 0px);
+    opacity: 0.3;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 0px);
+    opacity: 0.3;
+}
+
+.swiper-horizontal>.swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal {
+    top: 35px;
+}
+
+/* .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    background-color: antiquewhite;
+    border-radius: 4px;
+} */
+
+@media (orientation: landscape) {
+    body {
+        margin: 10px 20px;
+    }
+
+    .swiper-slide {
+        font-size: 18vh;
+    }
+
+    .swiper-horizontal>.swiper-pagination-progressbar,
+    .swiper-pagination-progressbar.swiper-pagination-horizontal {
+        top: 5px;
+    }
+}
