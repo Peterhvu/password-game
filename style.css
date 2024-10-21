@@ -11,13 +11,14 @@ body {
     font-weight: 300;
     font-style: normal;
     font-size: 14px;
-    margin: 15px;
+    margin: 15px 5px;
     padding: 0;
 }
 
 .swiper {
-    width: 70%;
-    height: 96%;
+    width: 85%;
+    height: 90%;
+    margin-top: 15%;
 }
 
 .swiper-slide {
@@ -27,6 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: hsl(177, 92%, 23%);
+    border-radius: 20px;
     overflow-y: scroll;
 }
 
@@ -38,10 +40,15 @@ body {
 }
 
 .swiper-slide.intro {
-    font-size: 4em;
+    font-size: min(10vw, 10vh);
+    display: grid;
 }
 
 /* overriding swipper's bundle style  */
+.swiper-cards .swiper-slide {
+    overflow: scroll;
+}
+
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, 0px);
@@ -70,8 +77,17 @@ body {
         margin: 10px 20px;
     }
 
+    .swiper {
+        width: 75%;
+        margin-top: 0;
+    }
+
     .swiper-slide {
         font-size: 18vh;
+    }
+
+    .swiper-slide.intro {
+        display: flex;
     }
 
     .swiper-horizontal>.swiper-pagination-progressbar,
